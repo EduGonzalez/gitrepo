@@ -19,4 +19,4 @@ jobs:
         run: echo ${{ secrets.DOCKER_PASS }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
 
       - name: Push image
-        run: docker push EduGonzalez/gitrepo:latest
+        run: docker push edugonzalezdocker/gitrepo:latest
