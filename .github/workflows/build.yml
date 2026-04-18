@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build image
-        run: docker build -t EduGonzalez/gitrepo:latest  .
+        run: docker build -t edugonzalezdocker/gitrepo:latest  .
 
       - name: Login DockerHub
         run: echo ${{ secrets.DOCKER_PASS }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
